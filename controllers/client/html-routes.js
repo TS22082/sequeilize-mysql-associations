@@ -7,6 +7,7 @@ router.get("/", (req, res) => {
 });
 
 router.get("/showcase", (req, res) => {
+  // console.log(req.query);
   res.sendFile(path.join(__dirname, "../../views/showcase.html"));
 });
 

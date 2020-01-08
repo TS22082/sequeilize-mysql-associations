@@ -4,7 +4,7 @@ const db = require("../../models");
 
 router.get("/", (req, res) => {
   db.Author.findAll({
-    include: [db.Post]
+    // include: [db.Post]
   }).then(dbAuthor => {
     res.json(dbAuthor);
   });
